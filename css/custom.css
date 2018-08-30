@@ -125,7 +125,7 @@ h1, h3{
 
 .skillcontent{
     padding: 40px;
-    max-width: 50%;
+    max-width: 100%;
 }
 
 .skilltitle{
@@ -212,7 +212,7 @@ h1, h3{
 }
 
 .greybg{
-    background-color: #E4E4EA;
+    background-color: #F2F1F5;
 }
 
 .darkbg{
@@ -234,4 +234,8 @@ h1, h3{
     margin-left: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.test{
+    width: 100%;
 }
