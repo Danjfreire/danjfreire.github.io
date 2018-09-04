@@ -111,7 +111,6 @@ body{
 
 h1{
     font-size: 2.5rem;
-    margin-left: 2.5rem;
 }
 
 h3{
@@ -129,7 +128,7 @@ h1, h3{
 
 .subtitle{
     color: white;
-    letter-spacing: 10px;
+    letter-spacing: 5px;
     font-family: inherit;
     font-size: 2.0rem;
     text-align: center;
