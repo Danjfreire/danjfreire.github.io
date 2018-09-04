@@ -18,15 +18,18 @@
     <div class="container-fluid home">
         <nav class="navbar navbar-expand-lg toggle-heigth">
             <div class="container">
-                <a class="navbar-brand navItems" href="#">Daniel Freire</a>
+                <a class="navbar-brand navItems" id="aboutLink" href="#">Daniel Freire</a>
                 <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget" aria-controls="navbarTarget"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon custom-toggler"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarTarget">
-                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                        <li class="nav-item">
-                            <a class="nav-link navItems" href="#">Projetos</a>
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link navItems" id="skillsLink" href="#">Habilidades</a>
+                        </li>
+                        <li class="nv-item active">
+                            <a class="nav-link navItems" id="projectsLink" href="#">Projetos</a>
                         </li>
                     </ul>
                 </div>
@@ -40,7 +43,7 @@
     </div>
 
     <div class="container-fluid about">
-        <h1 class="subtitle black">SOBRE MIM</h1>
+        <h1 class="subtitle black" id="about">SOBRE MIM</h1>
         <div class="container about">
             <div class="row rowpad">
                 <div class="col-md-4">
@@ -61,7 +64,7 @@
         </div>
     </div>
 
-    <div class="container-fluid about-black">
+    <div class="container-fluid about-black skills">
         <div class="container">
             <h1 class="subtitle">HABILIDADES</h1>
             <div class="row">
@@ -108,7 +111,7 @@
 
     <div class="container-fluid about greybg">
         <div class="container">
-            <h1 class="subtitle black">PROJETOS</h1>
+            <h1 class="subtitle black projects">PROJETOS</h1>
 
             <div class="row cardmargin whitebg">
                 <div class="col-md-4 nopadding darkbg leftradius">
@@ -148,7 +151,8 @@
             </div>
 
             <p class="centered topMargin">Esses projetos e muitos outros estão disponíveis na minha <a href="#">página do
-                    Github</a></p>
+                    Github
+                </a></p>
         </div>
     </div>
 
@@ -161,6 +165,27 @@
         <br>
     </div>
 
+    <script>
+        document.getElementById("aboutLink").addEventListener('click', function (e) {
+            e.preventDefault();
+            scrollToSection('.about')
+        });
+
+        document.getElementById("projectsLink").addEventListener('click', function (e) {
+            e.preventDefault();
+            scrollToSection('.projects')
+        });
+
+        document.getElementById("skillsLink").addEventListener('click', function (e) {
+            e.preventDefault();
+            scrollToSection('.skills')
+        });
+
+        function scrollToSection(section) {
+            document.querySelector(section).scrollIntoView({ block: "start", behavior: 'smooth' });
+
+        }
+    </script>
 </body>
 
 </html>
