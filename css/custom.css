@@ -17,10 +17,14 @@ body{
     background-color: #212529;
 }
 
-.scroll{
+.navItems{
     font-size: 1em;
     color: white;
     font-family: Gravity;
+}
+
+.navbar{
+    background-color: transparent;
 }
 
 .navbar-nav li:hover {
@@ -35,11 +39,17 @@ body{
 }
 
 .home{
-    background-image: url("../assets/home_keyboard.jpg");
-    height: 700px;
+    background-image: url("../assets/home/home_keyboard.jpg");
+    height: 800px;
+    width: auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.homePhrase{
+    font-family: Gravity-Book;
+    color: white;
 }
 
 .row{
@@ -51,9 +61,14 @@ body{
     padding: 40px;
 }
 
-.about{
+@media (min-width: 768px){
+.about {
     padding-top: 40px;
     padding-bottom: 40px;
+}
+}
+
+.about{
     background-color: white;
 }
 
@@ -64,17 +79,22 @@ body{
 }
 
 .circleImg {
+    transform: translateY(-50%);
     border-radius: 50%;
     height: 200px;
     position: relative;
     top: 50%;
-    transform: translateY(-50%);
     float: right;
 }
 
-.homediv{
-    font-family: Gravity-Book;
-    color: white;
+@media (max-width: 767px){
+.circleImg {
+    float: none;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 120px;
+}
 }
 
 .home-title{
@@ -112,7 +132,7 @@ h1, h3{
     letter-spacing: 10px;
     font-family: inherit;
     font-size: 2.0rem;
-    padding-left: 50px;
+    text-align: center;
 }
 
 .black{
@@ -135,7 +155,6 @@ h1, h3{
     font-family: inherit;
     font-weight: 500;
 }
-
 
 .skilltext{
     font-family: inherit;
@@ -223,19 +242,11 @@ h1, h3{
     background-color: white;
 }
 
-.footer{
-    bottom: 0;
+.topMargin{
+    margin-top: 30px;
 }
 
-.social{
-    width: 50px;
-    height: auto;
-    margin-right: 10px;
-    margin-left: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.test{
-    width: 100%;
+.footerText{
+    font-family: Gravity-Book;
+    color: white;
 }

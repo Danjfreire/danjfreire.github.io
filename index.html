@@ -15,36 +15,36 @@
 </head>
 
 <body>
-    <nav class="navbar fixed-top navbar-expand-lg toggle-heigth">
-        <div class="container">
-
-            <a class="navbar-brand scroll" href="#">Daniel Freire</a>
-            <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
-                aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon custom-toggler"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
-                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link scroll" href="#">Projetos</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
     <div class="container-fluid home">
-        <div class="center homediv">
+        <nav class="navbar navbar-expand-lg toggle-heigth">
+            <div class="container">
+                <a class="navbar-brand navItems" href="#">Daniel Freire</a>
+                <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarTarget" aria-controls="navbarTarget"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon custom-toggler"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTarget">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link navItems" href="#">Projetos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <div class="center homePhrase">
             <h1 class="home-title">DANIEL FREIRE</h1>
             <h3>Um entusiasta de tecnologia e games, apaixonado por aprendizado</h3>
         </div>
     </div>
 
     <div class="container-fluid about">
+        <h1 class="subtitle black">SOBRE MIM</h1>
         <div class="container about">
             <div class="row rowpad">
                 <div class="col-md-4">
-                    <img class="circleImg" src="./assets/me.jpg">
+                    <img class="circleImg" src="./assets/home/me.jpg">
                 </div>
                 <div class="col-md-8">
                     <p>
@@ -53,8 +53,8 @@
                         Tecnologia, onde atuo na área de desenvolvimento de software. Meu objetivo atual é conseguir um estágio
                         como desenvolvedor de software e aprimorar meus conhecimentos. Possuo um bom conhecimento de Java,
                         desenvolvimento web e móvel, além de bancos de dados relacionais, também possuo interesse nas áreas
-                        de testes de software e métodos formais. Meus principais hobbies são games multiplayer competitivos,
-                        memes e aprender novas tecnologias.
+                        de testes de software e métodos formais. Meus principais hobbies são aprender novas tecnologias,
+                        games multiplayer competitivos e memes.
                     </p>
                 </div>
             </div>
@@ -62,55 +62,57 @@
     </div>
 
     <div class="container-fluid about-black">
-        <h1 class="subtitle">SKILLS</h1>
-        <div class="row">
-            <div class="col-md-6 skillcontent">
-                <h3 class="skilltitle">JAVA</h3>
-                <h5 class="skilltext">3 anos desenvolvendo sistemas orientados a objeto, estruturas de dados e testes de
-                    software
-                </h5>
+        <div class="container">
+            <h1 class="subtitle">HABILIDADES</h1>
+            <div class="row">
+                <div class="col-md-6 skillcontent">
+                    <h3 class="skilltitle">JAVA</h3>
+                    <h5 class="skilltext">3 anos desenvolvendo sistemas orientados a objeto, estruturas de dados e testes
+                        de software
+                    </h5>
+                </div>
+                <div class="col-md-6 skillcontent">
+                    <h3 class="skilltitle">MOBILE</h3>
+                    <h5 class="skilltext">Desenvolvimento e teste de aplicativos android com Java</h5>
+                </div>
             </div>
-            <div class="col-md-6 skillcontent">
-                <h3 class="skilltitle">MOBILE</h3>
-                <h5 class="skilltext">Desenvolvimento e teste de aplicativos android com Java</h5>
+            <div class="row">
+                <div class="col-md-6 skillcontent">
+                    <h3 class="skilltitle">WEB</h3>
+                    <h5 class="skilltext">Experiência com HTML, CSS, Javascript, Bootstrap e Vue.js </h5>
+                </div>
+                <div class="col-md-6 skillcontent">
+                    <h3 class="skilltitle">MÉTODOS FORMAIS</h3>
+                    <h5 class="skilltext">1 ano de experiência especificando o comportamento de sistemas com a linguagem
+                        CSP
+                    </h5>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-md-6 skillcontent">
-                <h3 class="skilltitle">WEB</h3>
-                <h5 class="skilltext">Experiência com HTML, CSS, Javascript, Bootstrap e Vue.js </h5>
+            <h3 class="skilltitle">Outras</h3>
+            <div class="otherskills" id="skills">
+                <ul>
+                    <li>Go</li>
+                    <li>C</li>
+                    <li>Spring</li>
+                    <li>Vue.js</li>
+                    <li>Git</li>
+                    <li>MySQL</li>
+                    <li>PostgreSQL</li>
+                    <li>Node.js</li>
+                    <li>Sass</li>
+                    <li>Scrum</li>
+                </ul>
             </div>
-            <div class="col-md-6 skillcontent">
-                <h3 class="skilltitle">MÉTODOS FORMAIS</h3>
-                <h5 class="skilltext">1 ano de experiência especificando o comportamento de sistemas com a linguagem CSP</h5>
-            </div>
-        </div>
-        <h3 class="skilltitle">Outras skills</h3>
-        <div class="otherskills" id="skills">
-            <ul>
-                <li>Go</li>
-                <li>C</li>
-                <li>Spring</li>
-                <li>Vue.js</li>
-                <li>Git</li>
-                <li>MySQL</li>
-                <li>PostgreSQL</li>
-                <li>Node.js</li>
-                <li>Sass</li>
-                <li>Scrum</li>
-            </ul>
         </div>
     </div>
 
     <div class="container-fluid about greybg">
-        <h1 class="subtitle black">PROJETOS</h1>
-        <h3 class="black centered">Em andamento</h3>
-
         <div class="container">
+            <h1 class="subtitle black">PROJETOS</h1>
 
             <div class="row cardmargin whitebg">
                 <div class="col-md-4 nopadding darkbg leftradius">
-                    <img class="projectlogo" src="./assets/dotaprologo.svg">
+                    <img class="projectlogo" src="./assets/project-logos/dotaprologo.svg">
                 </div>
                 <div class="col-md-8 rightradius">
                     <h4>DotaPro</h4>
@@ -129,7 +131,7 @@
 
             <div class="row cardmargin whitebg">
                 <div class="col-md-4 nopadding leftradius">
-                    <img class="projectlogo" src="./assets/No-logo.svg">
+                    <img class="projectlogo" src="./assets/project-logos/No-logo.svg">
                 </div>
                 <div class="col-md-8 rightradius">
                     <h4>Refinement</h4>
@@ -144,69 +146,21 @@
                     <a href="#" class="btn">Saiba mais</a>
                 </div>
             </div>
-            <br>
-            <br>
-            <h3 class="black centered">Projetos antigos</h3>
 
-
-            <div class="row cardmargin whitebg">
-                <div class="col-md-4 nopadding leftradius">
-                    <img class="projectlogo" src="./assets/bccsurvivor.svg">
-                </div>
-                <div class="col-md-8 rightradius">
-                    <h4>BCC Survivor</h4>
-                    <p class="card-text black">Game android de perguntas e respostas do curso de ciências da computação.
-                    </p>
-                    <ul class="horizontal">
-                        <li>Java</li>
-                        <li>Spring</li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
-                </div>
-            </div>
-
-            <div class="row cardmargin whitebg">
-                <div class="col-md-4 nopadding leftradius">
-                    <img class="projectlogo" src="./assets/simgeh.png">
-                </div>
-                <div class="col-md-8 rightradius">
-                    <h4>SGHVet - Sistema de Gerenciamento Hospitalar Veterinário</h4>
-                    <p class="card-text black"> Protótipo de sistema de gerenciamento de hospital veterinário desenvolvido
-                        para a o hospital veterinário da UFRPE.
-                    </p>
-                    <ul class="horizontal">
-                        <li>Java</li>
-                    </ul>
-                    <a href="#" class="btn">Saiba mais</a>
-                </div>
-            </div>
-
-            <br>
-            <br>
-
-            <p class="centered">Você pode encontrar todos esses projetos e muitos outros na minha página do Github</p>
-
+            <p class="centered topMargin">Esses projetos e muitos outros estão disponíveis na minha <a href="#">página do
+                    Github</a></p>
         </div>
     </div>
 
-    <footer class="footer container-fluid darkbg">
-        <div class="container">
-            <div>
-                <ul class="centered">
-                    <li style="display:inline-block">
-                        <a href="#"><img class="social" src="./assets/social/linkedin.svg"></a>
-                    </li>
-                    <li style="display:inline-block">
-                        <a href="#"><img class="social" src="./assets/social/github.svg"></a>
-                    </li>
-                    <li style="display:inline-block">
-                        <a href="#"><img class="social" src="./assets/social/twitter.svg"></a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </footer>
-    <p class="centered" style="color:white">Daniel Freire, 2018</p>
+    <div class="container-fluid text-center center-block">
+        <p class="footerText">Daniel Freire, 2018</p>
+        <a href="#"><img src="./assets/social/linkedin.png"></a>
+        <a href="#"><img src="./assets/social/twitter.png"></a>
+        <a href="#"><img src="./assets/social/github.png"></a>
+        <br>
+        <br>
+    </div>
+
 </body>
 
 </html>
